@@ -26,7 +26,7 @@ Mỗi thành viên làm theo flow tương tự:
 
 git clone https://github.com/mkalab/lab02.git
 
-cd QLBongDa-Lab02
+cd lab02
 
 
 
