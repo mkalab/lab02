@@ -5,10 +5,24 @@
 ##### Cấu trúc thư mục
 
 * cau\_abcd
+
+  * screentshots
 * cau\_efgh
+
+  * screentshots
 * cau\_i1
+
+  * screentshots
 * cau\_i2
+
+  * screentshots
 * cau\_j
+
+  * screentshots
+
+
+
+Mỗi người về tạo 1 thư mục screenshots trong thư mục câu tương ứng của mình nha 
 
 
 
@@ -67,4 +81,15 @@ git push origin ngoc/cau\_efgh hoặc git push -u origin ngoc/cau\_efgh
 
 
 Ở lần push đầu tiên của một nhánh mới, nếu dùng thêm flag -u, những lần sau chỉ cần git push là xong
+
+
+
+
+
+###### **Để tránh gặp sự cố tương thích giữa các phiên bản, cả nhóm chỉ cần lưu ý 2 điều:**
+
+
+
+* KHÔNG gửi/đẩy file Backup CSDL (.bak): SQL Server không cho phép bản cũ khôi phục (restore) file .bak được tạo từ bản mới hơn (ví dụ: máy dùng SQL Server 2019 không thể mở file .bak xuất từ máy dùng SQL Server 2025).
+* KHÔNG đẩy file dữ liệu (.mdf, .ldf): Đây là các file CSDL gốc của máy cá nhân, không nên đưa vào Repository GitHub.
 
